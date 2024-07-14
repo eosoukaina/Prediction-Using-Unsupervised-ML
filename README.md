@@ -1,20 +1,45 @@
-# Prediction-Using-Unsupervised-ML
+# Iris Flower Clustering with K-Means
 
-# Objective:
- Finding the optimum number of clusters for k-means classification using the Elbow Method.
+This project illustrates the application of K-Means clustering, an unsupervised machine learning method, to analyze the Iris dataset and predict its clustering.
 
-Elbow Method:
-plots the within-cluster sum of squares (WCSS) against the number of clusters. The optimal number of clusters is identified at the "elbow" point where the rate of decrease of WCSS slows down significantly.
+## Project Overview
 
-# Implementation Details:
+The Iris dataset is a well-established dataset in machine learning, comprising 150 observations of iris flowers. Each observation includes four features: sepal length, sepal width, petal length, and petal width. The dataset is categorized into three distinct classes: Iris-setosa, Iris-versicolour, and Iris-virginica.
+In this project, K-Means clustering is employed to group iris flowers into three clusters based on their feature similarities.
 
-The code utilizes KMeans from scikit-learn to fit models for various values of k.
-The inertia_ attribute of KMeans provides the WCSS value for each model.
-WCSS values for different values of k (ranging from 1 to 10 in this example) are stored in a list named wcss.
-A plot is generated where the x-axis represents the number of clusters (k), and the y-axis represents the corresponding WCSS values.
+## Requirements
 
-# Visualizing the Clusters:
-To visualize the clusters identified by k-means:
-Data points are plotted and colored based on their assigned cluster labels.
+To execute this project, ensure you have the following installed:
 
-The visualization helps understand how the data points are grouped into clusters based on their features.
+    - Python 3.x
+    - NumPy
+    - Pandas
+    - Matplotlib
+    - Scikit-learn
+
+## Project Structure
+
+The project directory includes the following files:
+main.py: This script performs K-Means clustering on the Iris dataset and visualizes the resulting clusters.
+
+ ## Running the Project
+
+Follow these steps to run the project:
+   1- Clone the repository:
+```
+Copy code
+git clone https://github.com/your-username/Prediction-Using-Unsupervised-ML.git
+cd Prediction-Using-Unsupervised-ML
+Run the script:
+```
+   2- Copy code python main.py
+The script will execute the following tasks:
+
+   - Load the Iris dataset.
+   - Determine the optimal number of clusters using the elbow method.
+   - Apply K-Means clustering to classify the iris flowers into three clusters.
+   - Visualize the clusters and their centroids.
+     
+By running main.py, you will observe how K-Means clustering categorizes the Iris dataset based on its features, revealing natural groupings within the data.
+
+Feel free to explore and modify the script to enhance your understanding of unsupervised machine learning and clustering techniques.
